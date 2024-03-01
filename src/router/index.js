@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 // import HomeView from '../views/HomeView.vue'
-import ToDoList from '../views/ToDoList.vue'
+// import ToDoList from '../views/ToDoList.vue'
+import Shopping from '../views/ShoppingList.vue';
+import ShoppingCar from '../views/ShoppingCar.vue';
+import ShoppingCheckout from '../views/ShoppingCheckout.vue';
+import ShoppingBuySuccess from '../views/ShoppingBuySuccess.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,7 +15,7 @@ const router = createRouter({
       // 自訂義頁面名稱
       name: 'home',
       // 自訂義要使用到的元件
-      component: ToDoList
+      component: Shopping
     },
     {
       path: '/about',
@@ -24,22 +28,26 @@ const router = createRouter({
     {
       path: '/shopping',
       name: 'shopping',
-      component: () => import('../views/ShoppingCard/ShoppingList.vue')
+      //  自訂義要使用到的元件
+      component: Shopping,
     },
     {
       path: '/Shoppingcar',
       name: 'Shoppingcar',
-      component: () => import('../views/ShoppingCard/ShoppingCar.vue')
+      //  自訂義要使用到的元件
+      component:ShoppingCar,
     },
     {
       path: '/Shoppingcheck',
       name: 'ShoppingCheckout',
-      component: () => import('../views/ShoppingCard/ShoppingCheckout.vue')
+      //  自訂義要使用到的元件
+      component:ShoppingCheckout,
     },
     {
       path: '/buysuccess',
       name: 'ShoppingBuySuccess',
-      component: () => import('../views/ShoppingCard/ShoppingBuySuccess.vue')
+      //  自訂義要使用到的元件
+      component:ShoppingBuySuccess,
     },
     
   ]
