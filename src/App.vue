@@ -34,7 +34,7 @@ export default {
   <!-- 觀察你的設計稿 把共用的部分放在此頁面 -->
   <header class="flex justify-between h-[40px]">
     <div>
-      <RouterLink to="/todolist">todolist</RouterLink>
+      <!-- <RouterLink to="/todolist">todolist</RouterLink> -->
       <RouterLink to="/shopping">shopping</RouterLink>
     </div>
     <div class="pr-5 relative">
